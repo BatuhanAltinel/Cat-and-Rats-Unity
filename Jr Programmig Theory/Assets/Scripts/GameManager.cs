@@ -37,30 +37,13 @@ public class GameManager : MonoBehaviour
         }
     }
        
-        void Start()
+    void Start()
     {
-        
         InvokeRepeating("CreateLiveUp", 5f, 15f);
         levelIndex = 0;
-        //if (isGameStarted)
-        //{
-        //    NextLevel();
-        //    SpawnRats();
-        //}
         Time.timeScale = 1.0f;
-
     }
 
-    private void Update()
-    {
-        //int numberOfRat = GameObject.FindGameObjectsWithTag("Rat").Length;
-        //ratText.text = "Rats: " + numberOfRat;
-        //if (numberOfRat == 0 && isGameStarted)
-        //{
-        //    NextLevel();
-        //    SpawnRats();
-        //}
-    }
     public void PauseGame()
     {
         gameScene.gameObject.SetActive(true);

@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class CatMovement : MonoBehaviour
 {
-    private Rigidbody catRb;
     [SerializeField] private float speed = 0.3f;
     private Animator catAnim;
     [SerializeField] float turnSpeed = 50.0f;
@@ -17,10 +16,8 @@ public class CatMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        catRb = GetComponent<Rigidbody>();
         catAnim = this.GetComponent<Animator>();
         catLives = 3;
-        
     }
 
     // Update is called once per frame

@@ -38,7 +38,6 @@ public class ObjectPooling : MonoBehaviour
             ratInstantiate = GetRatFromPool();
             if (ratInstantiate != null)
             {
-                //ratPool.Dequeue();
                 ratInstantiate.SetActive(true);
             }
         }
